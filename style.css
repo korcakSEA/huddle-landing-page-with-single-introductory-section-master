@@ -101,6 +101,12 @@ img{
     width: 75%;
 }
 
+.content__btn:hover{
+    background-color:var(--Soft-Magenta);
+    color: #fff;
+    cursor: pointer;
+}
+
 .bottom-nav{
     display: flex;
     justify-content: center;
@@ -121,8 +127,47 @@ img{
 
 
 @media (min-width:900px){
+
+    html{
+        font-size: 62.5%; /* 1rem = 10px */
+    }
+
     body{
         background-image: url('./images/bg-desktop.svg');
         background-position:top left;
     }
+
+    .wrapper{
+        width:90%
+    }
+
+    .wrapper__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin: 0 auto;
+    }
+
+    .content__img{
+        width:60%;
+        margin: 0 auto;
+    }
+
+    .content{
+        width: 40%;
+        text-align: left;
+    }
+
+    .bottom-nav{
+        justify-content: flex-end;
+        padding-block: 0;
+    }
+
+    .wrapper__logo{
+        width: 22rem;
+        margin-block: 3rem;
+    }
+
+    .content__btn{width: 50%;}
 }
