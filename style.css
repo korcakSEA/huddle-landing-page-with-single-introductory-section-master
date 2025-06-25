@@ -1,0 +1,128 @@
+
+:root{
+
+    /** Colors */
+
+    /* Primary */
+
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+    /** Font */
+
+    --Font-Primary: 'Poppins', sans-serif;
+    --Font-Secondary: 'Open Sans', sans-serif;
+
+    --fw-400: 400;
+    --fw-600: 600;  
+
+    --font-size-sm: 1.3125rem;
+    --font-size-md: 1.95rem;
+    --font-size-lg: 3rem;
+    
+
+}
+
+*,*::before,*:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Style */
+
+body{
+    background-color: var(--Violet);
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size:contain;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    width:80%;
+    max-width: 1350px;
+    height: 800px;
+    margin: 0 auto;
+
+}
+
+.wrapper__logo{
+    width: 14rem;
+    margin-block: 5rem;
+}
+
+.wrapper__content{
+    margin-block: 5rem;
+    
+}
+
+.content__img{
+    margin-block: 7rem;
+}
+
+.content{
+    text-align: center;
+}
+
+.content__header{
+    font-family: var(--Font-Primary);
+    color: #fff;
+    font-size: var(--font-size-lg);
+    margin-block: 2rem;
+}
+
+.content__text{
+    font-family: var(--Font-Secondary);
+    color: #fff;
+    font-size: var(--font-size-md);
+    margin-block: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+}
+
+.content__btn{
+    display: inline-block;
+    background-color: #fff;
+    color: var(--Violet);
+    font-family: var(--Font-Secondary);
+    font-size: var(--font-size-md);
+    margin-block: 2rem;
+    padding: 1.5rem 4.5rem;
+    border: none;
+    border-radius: 50px;
+    width: 75%;
+}
+
+.bottom-nav{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 2rem;
+}
+
+.bottom-nav__wrapper{
+    border: 2px solid #fff;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.bottom-nav__image{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+@media (min-width:900px){
+    body{
+        background-image: url('./images/bg-desktop.svg');
+        background-position:top left;
+    }
+}
